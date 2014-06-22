@@ -39,7 +39,7 @@ The execution of the run_analysis.R script will run all the following steps auto
 and test data(./test/X_train.txt) were read as data frames
 * Both training and test data were combined using rbind into a new data frame named 'combineData'
 
-## Step2: Extracts only the measurements on the mean and standard deviation for each measurement. 
+## Step 2: Extracts only the measurements on the mean and standard deviation for each measurement. 
 * As the number of measurements were too numerous and some descriptions were not clear, it was assumed that the word 'mean' in the measurements would refer to mean. Similarly, a glance towards the column names indicate that 'std' would refer to standard dviation.
 * To look for measurements on the mean, a grep search was conducted on combineData to look for column names that contain the word 'mean'.
 * This was repeated for columns that contain the word 'std'.
@@ -61,7 +61,9 @@ and test data(./test/X_train.txt) were read as data frames
 * The information from both files were combined using rbind and added as a new column called "subjects" to the data frame 'dataWithActivityLabels', to form a new data frame called 'dataWithSubjects'.
 * The data is now sorted by subjects, then activity.
 * To get the tidy data, a loop function was written that does the following:
+
 1. subset the data frame by subject, e.g data frame that contains only information for subject 1
 2. For each measurement (column), collapse that column and get the mean value for that measurement by activity (e.g. WALKING)
+
 * Now recombined all the data frames for each subject into a new tidyDataFrame.
 * Write tidyDataFrame to a file within the same working directory called tidyData as a tab-delimited file.

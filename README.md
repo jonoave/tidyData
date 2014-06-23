@@ -67,4 +67,5 @@ and test data(./test/X_train.txt) were read as data frames
 2. For each measurement (column), collapse that column and get the mean value for that measurement by activity (e.g. WALKING)
 
 * Now recombined all the data frames for each subject into a new tidyDataFrame.
+* To differentiate the change in this new tidyDataFrame, where each measurement is now a mean/activity, each measurement (column name) is added with a "MEAN" prefix 
 * Write tidyDataFrame to a file within the same working directory called tidyData as a tab-delimited file.

@@ -45,7 +45,7 @@ The measurement names have already been added to the data frame in Step 1.
 * dataIMelt: melt dataSubject I for all measurements (given by colLabels) by activity 
 * subjectIMelt: collapse all measurement columns as mean per activity
 * subjectColAdd: readds the subject column to subset data dataSubjectI. Append dataSubjectI to tidyDataFrame.
-* tidyDataFrame: after completion of loop, this data frame has 81 rows (30 subjects * 6 activities, plus one header row)
+* tidyDataFrame: after completion of loop, this data frame has 81 rows (30 subjects * 6 activities, plus one header row). To differentiate the change in this new tidyDataFrame, where each measurement is now a mean/activity, each measurement (column name) is added with a "MEAN" prefix 
 * tidyData.txt: a text file, where tidyDataFrame is written out as tab-delimited tab file.
 
 # Raw data link information

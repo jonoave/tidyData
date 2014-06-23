@@ -53,6 +53,7 @@ head(rownames(dataWithSubjects))
 colLabels = colnames(dataWithSubjects)
 colLabels = colLabels[!colLabels=="subjects"]
 colLabels = colLabels[!colLabels=="activity"]
+tidyDataFrame <- data.frame()
 ## separate data by subjects, then melt each measurement by activity to get the mean
 for(i in 1:30){
   dataSubjectI <- dataWithSubjects[dataWithSubjects$subjects == i,]

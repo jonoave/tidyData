@@ -6,7 +6,7 @@ Details in this file include:
 
 # Variables used in this data
 The units of measurements provided for the raw data is unknown and left as is.
-The working directory was set to the unzipped folder containing the raw data '/UCI HAR Dataset/
+The working directory was set to the unzipped folder containing the raw data /UCI HAR Dataset/
 
 ## Step 1: Merging the training and test data
 *trainData : data read as table from "./train/X_train.txt"

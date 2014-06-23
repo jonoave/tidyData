@@ -9,6 +9,7 @@ The 4 files are:
 
 ## Repository link
 The link to this repository is:
+[https://github.com/jonoave/tidyData
 
 ## CodeBook.md
 This is a markdown file that has the details the variables used and changed during the processing of the raw data into tidyData (using the R script run_analysis.R).
@@ -33,7 +34,7 @@ This is the tidy data generated from the raw data. It is a tab-delimited file th
 
 The execution of the run_analysis.R script will run all the following steps automatically. The information below provides the details on what the script is doing at each step.
 
-## Step1: Merging the training and test data
+## Step 1: Merging the training and test data
 *Set working directory /UCI HAR Dataset/
 *Accelerometer data from training data (./train/X_train.txt)
 and test data(./test/X_train.txt) were read as data frames
